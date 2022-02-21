@@ -17,6 +17,6 @@ const visitSchema = new mongoose.Schema({
     },
 });
 
-
+visitSchema .index({ doctorId: 1, userId: 1 }, { unique: true, dropDups: true });
 
   module.exports = visitSchema;
